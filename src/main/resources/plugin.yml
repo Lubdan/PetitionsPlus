@@ -1,0 +1,8 @@
+name: PetitionsPlus
+version: ${project.version}
+main: lubdan.petitionsplus.PetitionsPlus
+authors: [Lubdan]
+description: Allows players to create petitions for other players to support or disagree with.
+commands:
+  petition:
+    description: Allows for voting on player-suggested topics.

@@ -1,0 +1,48 @@
+#Basic Responses
+Petition-Started: "&aYour Petition has been started!"
+Enter-title: "&aPlease enter the title of your petition!"
+Enter-Description: "&aPlease enter a description of your petition!"
+No-Permission: "&cYou do not have permission to do that."
+Deleted: "&4The Petition was deleted!"
+Archived: "&aThe Petition was Archived Successfully!"
+unArchive: "&aThe Petition has been restored!"
+Incorrect-Parameters: "&c You caused an error..Probably by giving incorrect parameters. If this continues please contact staff"
+No-Petitions: "&a There are no Petitions currently available."
+Thanks-For-Voting: "&a Thanks for Voting!"
+Already-Voted: "&c You already voted or cannot vote at this time.."
+Announce: true
+
+#Text-View Petitions
+List-View-Format: "&e [id]: &c[title] "
+Single-View-Extra-Data: "&e Posted by [author] at [time]"
+Single-View-Title: "&c&l [title]"
+Single-View-Description: "&e [description]"
+Single-View-Votes: "&e Votes: &a[upvotes] &f: &4[downvotes]"
+Disagree: "[&cDisagree&f]"
+Agree: "[&aAgree&f]"
+
+#This line is sent once before and after the single view content is sent, used for decoration purposes, feel free to make it empty.
+Single-View-Decoration: "&7 ------------------------------------"
+
+
+#Help Section:
+Line-1: "&eHelp&f: Shows this help message."
+Line-2: "&eCreate&f: Allows you to start your own petition."
+Line-3: "&eView&f: Allows you to view more information about a certain petition, it requires a petition ID as a parameter."
+Line-4: "&eList&f: Allows you to view all active petitions."
+Line-5: "&eVote&f: Allows you to vote on a petition, first argument is the petition ID, second is either 'agree' or 'disagree'"
+Line-6: "&eGUI&F: Allows you to use the experiential GUI version of the plugin."
+#These are for staff members, only displayed if a player has the permission "Petitions.Staff"
+Staff-1: "&eDelete&f: Deletes a petition, takes the ID as a parameter."
+Staff-2: "&eArchive&f: Archives a petition, disables voting and normal players viewing said petition."
+Staff-3: "&eunArchive&f: Restores a petition from an archived state."
+
+
+#Gui Stuff
+GUI-Name-Style: "&a[title]"
+Lore-1: "&bUp-Votes:&f "
+Lore-2: "&bDown-Votes:&f "
+GUI-Description: "&e[description]"
+
+
+
