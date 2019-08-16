@@ -36,6 +36,8 @@ public final class PetitionsPlus extends JavaPlugin {
     @Override
     public void onEnable() {
         try{
+            getConfig().options().copyDefaults();
+            saveDefaultConfig();
             Class.forName("org.sqlite.JDBC");
             DriverManager.registerDriver(new JDBC());
             this.enabled = true;
@@ -50,8 +52,7 @@ public final class PetitionsPlus extends JavaPlugin {
             this.getServer().getPluginManager().registerEvents(new InventoryClick(this), this);
 
 
-            getConfig().options().copyDefaults();
-            saveDefaultConfig();
+
 
 
         }
