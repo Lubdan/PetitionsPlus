@@ -48,9 +48,12 @@ public class Petition implements CommandExecutor {
                             sender.sendMessage(ChatColor.translateAlternateColorCodes('&', this.plugin.getConfig().getString("Line-3")));
                             sender.sendMessage(ChatColor.translateAlternateColorCodes('&', this.plugin.getConfig().getString("Line-4")));
                             sender.sendMessage(ChatColor.translateAlternateColorCodes('&', this.plugin.getConfig().getString("Line-5")));
+                            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', this.plugin.getConfig().getString("Line-6")));
 
                             if(player.hasPermission("Petitions.Staff")){
-
+                                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', this.plugin.getConfig().getString("Staff-1")));
+                                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', this.plugin.getConfig().getString("Staff-2")));
+                                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', this.plugin.getConfig().getString("Staff-3")));
                             }
 
                         }
@@ -60,9 +63,11 @@ public class Petition implements CommandExecutor {
 
                             if (player.hasPermission("Petitions.Create")) {
 
-                                sender.sendMessage(ChatColor.translateAlternateColorCodes('&',this.plugin.getConfig().getString("Petition-Started")));
-                                sender.sendMessage(ChatColor.translateAlternateColorCodes('&',this.plugin.getConfig().getString("Enter-title")));
-                                this.plugin.addTitlec(player.getName());
+                                if(!this.plugin.getTitleChat().contains(sender.getName()) && !this.plugin.getContentChat().contains(sender.getName())) {
+                                    sender.sendMessage(ChatColor.translateAlternateColorCodes('&', this.plugin.getConfig().getString("Petition-Started")));
+                                    sender.sendMessage(ChatColor.translateAlternateColorCodes('&', this.plugin.getConfig().getString("Enter-title")));
+                                    this.plugin.addTitlec(player.getName());
+                                }
 
                             } else {
                                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&',this.plugin.getConfig().getString("No-Permission")));
