@@ -2,6 +2,8 @@
 [Spigot] Allows players to create petitions for other players to support or disagree with.
 PetitionsPlus
 
+Spigot Page (Main Page): https://www.spigotmc.org/resources/petitionsplus.70411/
+
 Why?
 Players are the life and blood of a server. They make the server, and more importantly the community, what it is. Taking ideas from the player-base is one of the most important things a server owner can do, and this plugin is here to assist in doing just that.
 
