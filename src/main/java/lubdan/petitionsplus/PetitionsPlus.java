@@ -66,7 +66,12 @@ public final class PetitionsPlus extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        try{
+            this.DBconnection.close();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     public Connection getDBConnection(){

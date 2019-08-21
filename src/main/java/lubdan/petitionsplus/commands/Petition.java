@@ -329,6 +329,8 @@ public class Petition implements CommandExecutor {
                         sender.sendMessage(ChatColor.translateAlternateColorCodes('&', this.plugin.getConfig().getString("Line-3")));
                         sender.sendMessage(ChatColor.translateAlternateColorCodes('&', this.plugin.getConfig().getString("Line-4")));
                         sender.sendMessage(ChatColor.translateAlternateColorCodes('&', this.plugin.getConfig().getString("Line-5")));
+                        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', this.plugin.getConfig().getString("Line-6")));
+
                     }
 
 

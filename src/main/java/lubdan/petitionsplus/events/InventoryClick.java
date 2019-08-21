@@ -20,7 +20,6 @@ public class InventoryClick implements Listener {
  private   PetitionsPlus plugin;
     public InventoryClick(PetitionsPlus instance){
         this.plugin = instance;
-
     }
 
 
